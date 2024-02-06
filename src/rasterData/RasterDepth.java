@@ -53,9 +53,9 @@ public class RasterDepth implements Raster<Double>
     @Override
     public void clear(Double pixelValue)
     {
-        for(int i = 0; i > img.length; i++)
+        for(int i = 0; i < img.length; i++)
             {
-                for(int j = 0; j >img[0].length; j++)
+                for(int j = 0; j < img[0].length; j++)
                 {
                     img[i][j] = pixelValue;
                 }
